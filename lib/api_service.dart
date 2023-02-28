@@ -10,9 +10,9 @@ class News_Data_Service{
     var response= await http.get(Uri.parse(url));
     if (response.statusCode==200){
       var body = json.decode(response.body);
+      print(body);
       List<Newsmodel> _data = List<Newsmodel>.from(
         body["articles"].map((e) =>Newsmodel.fromJson(e)).toList());
-
 
       return _data;
     }

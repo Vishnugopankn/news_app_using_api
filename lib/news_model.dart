@@ -1,5 +1,7 @@
+import 'package:news_app_using_api/source_model.dart';
+
 class Newsmodel{
-String? source;
+Source? source;
 String? title;
 String?  desc;
 String? UrlToImage;
@@ -12,7 +14,7 @@ Newsmodel({
 });
 factory Newsmodel.fromJson(Map<String,dynamic> json){
  return Newsmodel(
-     source: json["source"],
+     source: Source.fromJson(json["source"]),
      title: json["title"],
      desc: json["description"],
      UrlToImage: json["urlToImage"],

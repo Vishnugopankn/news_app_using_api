@@ -25,7 +25,6 @@ class News_Container extends StatelessWidget {
                 Text("$newsHead",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,),),
 
                 SizedBox(height: 5,),
-
                 Text("$newsDes",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
 
               ],
